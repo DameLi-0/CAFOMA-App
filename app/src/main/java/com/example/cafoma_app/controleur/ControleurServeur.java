@@ -42,7 +42,7 @@ public final class ControleurServeur implements Controleur {
 
     public void initUser(String username, String password, View view, Intent intent, Activity activity){
         accesDistant = new AccesDistant(intent, activity);
-        accesDistant.envoyerRequeteView("mdp" +"&login=" + username + "&password=" + password ,view);
+        accesDistant.envoyerRequeteView("login" +"&login=" + username + "&password=" + password ,view);
     }
     public User getUser(){ return user; }
 

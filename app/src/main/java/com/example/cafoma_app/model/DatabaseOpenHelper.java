@@ -26,7 +26,7 @@ public class DatabaseOpenHelper extends SQLiteOpenHelper {
 			+ DESCRIPTION_FIELD + " TEXT NOT NULL,"
 			+ IMG_FIELD + " TEXT NOT NULL,"
 			+ VIDEO_FIELD + " TEXT NOT NULL);";
-	final private static String NAME_DB = "cafoma_bd";
+	final private static String NAME_DB = "cafoma";
 	final private static Integer VERSION = 1;
 	final private Context mContext;
 

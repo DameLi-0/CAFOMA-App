@@ -13,8 +13,6 @@ import com.example.cafoma_app.controleur.ControleurServeur;
 
 public class ChoixListeActivity extends AppCompatActivity {
     private static String TAG = "ChoixActivity";
-    private int mode;
-    private String titre;
     private Controleur controleur;
     private CardView titreViewFormationsListe;
     private CardView titreViewMesFormations;
@@ -29,10 +27,8 @@ public class ChoixListeActivity extends AppCompatActivity {
         titreViewMesFormations = (CardView) findViewById(R.id.titreId2);
         titreViewMesFavoris = (CardView) findViewById(R.id.titreId3);
         initChoix();
-
     }
     private void initChoix(){
-
         titreViewFormationsListe.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {

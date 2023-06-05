@@ -106,7 +106,7 @@ public class AccesDistant implements ReponseAsyncItf {
         User user = null;
         List<Formation> formations = null;
             String login = jsonUser.getString("login");
-            Boolean verif = jsonUser.getBoolean("verif");
+            String verif = jsonUser.getString("verif");
             formations = parserFormationList(jsonUser.getJSONArray("formations"));
             if (jsonUser.getJSONArray("formations").getJSONObject(0).getInt("formation_id") == -1){
                 user = new User(login,verif);

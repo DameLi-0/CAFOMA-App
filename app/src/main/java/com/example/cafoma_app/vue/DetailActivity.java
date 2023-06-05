@@ -39,7 +39,6 @@ public class DetailActivity extends AppCompatActivity {
     private ArrayAdapter<String> adapter;
     private ControleurBdd controleurBdd;
 
-    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -81,7 +80,7 @@ public class DetailActivity extends AppCompatActivity {
         if (mode == 1){
 
         }
-        if (mode ==2){
+        if (mode == 2){
             favori.setVisibility(View.VISIBLE);
             ajouterFavoris();
         }

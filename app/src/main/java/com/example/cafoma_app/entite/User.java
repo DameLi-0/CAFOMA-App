@@ -9,10 +9,10 @@ public class User {
     private String email;
     private String img;
     private String role;
-    private Boolean valid;
+    private String valid;
     private List<Formation> formationInscrit;
 
-    public User(Integer user_id,String login, String mdp, String email, String img, String role, Boolean valid){
+    public User(Integer user_id,String login, String mdp, String email, String img, String role, String valid){
         this.user_id = user_id;
         this.login = login;
         this.mdp = mdp;
@@ -21,12 +21,12 @@ public class User {
         this.role = role;
         this.valid = valid;
     }
-    public User(String login, Boolean valid) {
+    public User(String login, String valid) {
         this.login = login;
         this.valid = valid;
     }
 
-    public User(String login, Boolean verif, List<Formation> formationInscrit) {
+    public User(String login, String verif, List<Formation> formationInscrit) {
         this.valid = verif;
         this.login = login;
         this.formationInscrit=formationInscrit;
@@ -83,10 +83,10 @@ public class User {
         this.role = role;
     }
 
-    public Boolean getValid() {
+    public String getValid() {
         return valid;
     }
-    public void setValid(Boolean valid) {
+    public void setValid(String valid) {
         this.valid = valid;
     }
     public List<Formation> getFormationList(){

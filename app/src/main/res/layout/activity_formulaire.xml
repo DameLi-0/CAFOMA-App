@@ -5,101 +5,112 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".vue.FormulaireActivity">
+    tools:context=".vue.FormulaireActivity"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/titreId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Créer une formation"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="30dp">
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="numero formation :" />
+            android:textStyle="bold"
+            android:text="Libelle :"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
 
         <EditText
-            android:id="@+id/editNum"
+            android:id="@+id/editLibelle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="2" />
+            android:layout_weight="2"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp">
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="montant :" />
+            android:textStyle="bold"
+            android:text="Acronyme :"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
 
         <EditText
-            android:id="@+id/editMontant"
+            android:id="@+id/editAcronyme"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="2" />
+            android:layout_weight="2"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp">
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="description :" />
+            android:text="Description :"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
 
         <EditText
             android:id="@+id/editDescription"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="2" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="nom :" />
-
-        <EditText
-            android:id="@+id/editNom"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="2" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Description :" />
-
-        <EditText
-            android:id="@+id/editDescription"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="2" />
+            android:layout_weight="2"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
     </LinearLayout>
 
     <Button
         android:id="@+id/btnEnregistrer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Enregistrer" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:text="Enregistrer"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
 </LinearLayout>
